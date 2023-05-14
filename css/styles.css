@@ -112,12 +112,13 @@ color: #404bbf;
  color: var(--color-ocean);
 }
 
-.current-page{
+.current{
   position: relative;
+  color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current-page::after{
+.current::after{
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -546,7 +547,8 @@ background-color: #31d0aa;
   align-items: center;
   justify-content: center;
   color: var(--color-light-slate);
- transition: color 250ms var(cubic-bezier(0.4, 0, 0.2, 1),), border 250ms var(cubic-bezier(0.4, 0, 0.2, 1),);
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers:hover,
 .customers:focus{
