@@ -103,10 +103,30 @@ padding: 24px 0;
 display: block;
 text-decoration: none;
 
+position: relative;
+color: #404bbf;
+
 }
 .header-link:hover,
 .header-link:focus{
  color: var(--color-ocean);
+}
+
+.current-page{
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current-page::after{
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+    content: "";
+    display: block;
+    
 }
 
 .contact{
@@ -125,6 +145,8 @@ text-decoration: none;
   line-height:1.5;
   letter-spacing:0.02em;
   color:var(--color-slate);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover{
@@ -163,7 +185,7 @@ margin-bottom: 48px;
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-list-text:hover{
@@ -244,6 +266,7 @@ background-color: #fff;
   text-align: center;
  }
  .social-group{
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   height: 100%;
   background-color:var(--color-iris);
@@ -331,6 +354,11 @@ margin-right: 120px;
   padding: 12px 24px;
   border: 1px solid var(--color-cornflower);
   border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-btn-list-text:hover {
   color:var(--main-bagt-color);
@@ -460,10 +488,13 @@ padding-bottom: 120px;
   display: block;
   width: 100%;
   height: auto;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .images:hover,
 .images:focus{
   box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),  0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
 }
 img{
     display: block;
@@ -475,6 +506,7 @@ img{
 }
 
 .customers-icon{
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       font-size: 36px;
       line-height: 1.11;
       text-align: center;
@@ -492,6 +524,7 @@ fill:var(--color-cloud);
   gap: 24px;
 }
 .footer-media-item{
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   height: 100%;
   background-color:var(--color-iris);
@@ -575,7 +608,7 @@ background-color: #31d0aa;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  transition-property: trasform, opasity;
  transition-duration: 200ms;
  transition-timing-function: linear;
@@ -605,7 +638,7 @@ background-color: #31d0aa;
 .close-btn{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-btn:hower,
+.close-btn:hover,
 .close-btn:focus{
   fill: #ffffff
 }
@@ -617,6 +650,7 @@ background-color: #31d0aa;
  .header-item{
   position: relative;
   color: #404bbf;
+  
  }
  .teams-list-img-wrapper{
   position: relative;
@@ -627,7 +661,7 @@ background-color: #31d0aa;
   line-height: 1.5;
   letter-spacing: 0.02em;
   overflow-y: scroll;
-  transition: transform cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   color: #F4F4FD;
   background-color: #4d5ae5;
@@ -639,9 +673,7 @@ background-color: #31d0aa;
   left: 0px;
   top: 0px;
   transform: translate(0,100%);
-  padding-top: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 40px 32px;
 
 }
 .list-service:hover .overlay{
@@ -660,7 +692,7 @@ background-color: #31d0aa;
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden{
     opacity: 0;
