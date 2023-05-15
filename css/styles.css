@@ -685,7 +685,7 @@ background-color: #31d0aa;
   transform: translate(0,0);
 }
 .list-service:focus .overlay {
-  transform: translateY(0%)
+  transform: translateY(0,0)
 }
 
 .portfolio-list {
