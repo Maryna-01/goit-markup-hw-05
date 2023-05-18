@@ -106,21 +106,24 @@ display: block;
 text-decoration: none;
 
 position: relative;
-color: #404bbf;
+
 
 }
 .header-link:hover,
 .header-link:focus{
  color: var(--color-ocean);
 }
-
-.current{
+.current ::after{
+  bottom: -1px;
+  display: block;
   position: relative;
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+  width: 100%;
 }
 
-.current::after{
+.header-link::after{
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -129,6 +132,7 @@ color: #404bbf;
   border-radius: 2px;
     content: "";
     display: block;
+    width: 100%;
     
 }
 
@@ -408,9 +412,6 @@ color: var(--color-slate);
     justify-content: center;
     gap: 24px;
 }
-.header{
-box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),0px 1px 1px rgba(46, 47, 66, 0.16),0px 1px 6px rgba(46, 47, 66, 0.08);
-}
 
 h1,
 h2,
@@ -439,9 +440,6 @@ p{
   align-items: center;
   margin: 0, auto;
   
-}
-.header{
-  border-bottom: 1px solid var(--color-cornflower);
 }
 .container{
   width: 1158px;
@@ -492,6 +490,7 @@ padding-bottom: 120px;
   width: 100%;
   height: auto;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .images:hover,
 .images:focus{
@@ -656,7 +655,6 @@ background-color: #31d0aa;
  .header-item{
   position: relative;
   color: #404bbf;
-  
  }
  .teams-list-img-wrapper{
   position: relative;
