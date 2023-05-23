@@ -106,14 +106,16 @@ display: block;
 text-decoration: none;
 
 position: relative;
-
-
 }
+
+
 .header-link:hover,
 .header-link:focus{
  color: var(--color-ocean);
 }
-.current::after{
+
+
+.current{
  position: relative;
   bottom: -1px;
   width: 100%;
@@ -134,6 +136,7 @@ position: relative;
   width: 100%;
     
 }
+
 
 .contact{
   font-style:normal;
@@ -651,14 +654,15 @@ background-color: #31d0aa;
   fill: #ffffff
 }
 
- .header-item{
+ .header-item::after{
   position: relative;
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
+
  .teams-list-img-wrapper{
   position: relative;
-    overflow: hidden;
+  overflow: hidden;
  }
 
 .overlay{
