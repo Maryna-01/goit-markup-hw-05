@@ -617,7 +617,7 @@ background-color: #31d0aa;
  transition-duration: 200ms;
  transition-timing-function: linear;
  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+ padding: 72px 24px 24px 24px;
 }
 
 .close-btn{
@@ -744,7 +744,7 @@ background-color: #31d0aa;
 }
 
 .inputdiv-label {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .input-label {
   font-size: 12px;
@@ -768,8 +768,10 @@ background-color: #31d0aa;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus {
-  border-color: var(--color-iris);
   border-color: #4D5AE5;
+}
+.modal-input.modal-icon:focus {
+  fill: #4D5AE5;
 }
 .modal-icon {
   position: absolute;
@@ -777,6 +779,7 @@ background-color: #31d0aa;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .modal-comment{
   width: 100%;
@@ -791,11 +794,10 @@ background-color: #31d0aa;
   padding: 8px 16px;
   outline: transparent;
   resize: none;
-  
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-comment:focus {
-  border-color: var(--color-iris);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+border-color: #4D5AE5;
 }
 .modal-input:focus+.modal-icon { 
   border-color: var(--color-iris);
@@ -824,6 +826,10 @@ background-color: #31d0aa;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  background-color: var(--color-ocean);
+  border: none;
+  fill: var(--color-cloud)
+  
 }
 .link-check {
   font-weight: 400;
@@ -849,6 +855,12 @@ background-color: #31d0aa;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 24px;
+  }
+  .btn-modal:focus{
+   fill: #ffffff
+  }
+  .btn-modal:hover {
+   fill: #ffffff
   }
     .open-modal {
       position: absolute;
