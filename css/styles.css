@@ -745,7 +745,7 @@ background-color: #31d0aa;
 }
 
 .inputdiv-label {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .input-label {
   font-size: 12px;
@@ -771,7 +771,7 @@ background-color: #31d0aa;
 .modal-input:focus {
   border-color: #4D5AE5;
 }
-.modal-input.modal-icon:focus {
+.modal-icon:focus {
   fill: #4D5AE5;
 }
 .modal-icon {
@@ -808,9 +808,7 @@ border-color: #4D5AE5;
 .modal-checkbox {
   margin-bottom: 24px;
 }
-.modal-checkbox {
-  margin-bottom: 24px;
-}
+
 .modal-accept-privacy-check {
   font-size: 12px;
   line-height: 1.17;
@@ -829,9 +827,10 @@ border-color: #4D5AE5;
   fill: transparent;
   background-color: var(--color-ocean);
   border: none;
-  fill: var(--color-cloud)
+  fill: var(--color-cloud);
   
 }
+
 .link-check {
   font-weight: 400;
   font-size: 12px;
@@ -902,10 +901,4 @@ border-color: #4D5AE5;
   padding: 72px 16px;
   margin-bottom: 16px;
   line-height: 1.5;
-}
-  
-.modal-check.modal-check-span{
-background-color: var(--color-ocean);
-border: none;
-fill: var(--color-cloud)
 }
