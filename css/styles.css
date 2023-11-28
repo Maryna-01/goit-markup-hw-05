@@ -826,7 +826,11 @@ border-color: #4D5AE5;
   justify-content: center;
   fill: transparent;
 }
-
+.modal-check-span+.class{
+background-color: var(--color-ocean);
+border:none;
+fill: var(--color-cloud);
+}
 .link-check {
   font-weight: 400;
   font-size: 12px;
@@ -894,6 +898,6 @@ border-color: #4D5AE5;
   margin-bottom: 16px;
   line-height: 1.5;
 }
-.input-comment{
+.inputdiv-comment{
   margin-bottom: 16px;
 }
