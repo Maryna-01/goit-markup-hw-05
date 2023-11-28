@@ -889,6 +889,10 @@ fill: var(--color-cloud);
       border: none;
     }
     
+   .visually-hidden {
+          position: fixed;
+          transform: scale(0);
+   }
 .form {
   color: var(--color-navy-blue-modal);
   text-align: center;
@@ -900,4 +904,10 @@ fill: var(--color-cloud);
 }
 .inputdiv-comment{
   margin-bottom: 16px;
+}
+.class:checked,
+.modal-check-span {
+  background-color: var(--color-ocean);
+  border: none;
+  fill: var(--color-cloud);
 }
