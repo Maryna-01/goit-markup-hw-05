@@ -905,9 +905,11 @@ fill: var(--color-cloud);
 .inputdiv-comment{
   margin-bottom: 16px;
 }
+|/*
 .class:checked,
 .modal-check-span {
   background-color: var(--color-ocean);
   border: none;
   fill: var(--color-cloud);
 }
+*/
