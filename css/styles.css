@@ -745,8 +745,8 @@ background-color: #31d0aa;
 }
 
 .inputdiv-label {
-  margin-bottom: 16px;
-  
+  margin-bottom: 8px;
+
 }
 .input-label {
   font-size: 12px;
@@ -825,10 +825,6 @@ border-color: #4D5AE5;
   align-items: center;
   justify-content: center;
   fill: transparent;
-  background-color: var(--color-ocean);
-  border: none;
-  fill: var(--color-cloud);
-  
 }
 
 .link-check {
@@ -897,4 +893,7 @@ border-color: #4D5AE5;
   font-size: 16px;
   margin-bottom: 16px;
   line-height: 1.5;
+}
+.input-comment{
+  margin-bottom: 16px;
 }
