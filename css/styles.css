@@ -814,6 +814,9 @@ border-color: #4D5AE5;
 .modal-checkbox{
  margin-bottom: 24px;
 }
+.checkbox{
+  display: none;
+}
 
 .modal-accept-privacy-check{
 font-size: 12px;
@@ -865,6 +868,10 @@ color: var(--color-light-slate);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin:auto;
 }
+
+
+
+
 
 .btn-subscribe {
   font-family: "Roboto", sans-serif;
