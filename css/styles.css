@@ -687,6 +687,11 @@ background-color: rgba(46, 47, 66, 0.4);
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.container-modal-windows.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 
 .modal-windows{
 position: absolute;
@@ -809,7 +814,6 @@ border-color: #4D5AE5;
 .modal-checkbox{
  margin-bottom: 24px;
 }
-
 
 .modal-accept-privacy-check{
 font-size: 12px;
